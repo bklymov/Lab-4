@@ -24,3 +24,10 @@ Step 4
 1. Did the response change (status, server header, content-length) when the User-Agent was MyTestAgent/1.0?
 No
 2. If it had changed, what could that mean about the server’s defenses?
+
+Step 5
+
+1. What three pieces of information from the steps above would be most useful in a reconnaissance report, and why?
+Status code, Server header, URL
+2. One quick defensive suggestion an admin could use to reduce information leakage from headers.
+Do not include the version of a server.
