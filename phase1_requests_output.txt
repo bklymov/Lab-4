@@ -1,0 +1,44 @@
+Step 3
+
+Run this quick Python snippet and save output to phase1_requests_output.txt:
+
+>>> r = requests.get("http://scanme.nmap.org", timeout=5)
+>>> print("Status:", r.status_code)
+Status: 200
+>>> print("Final URL:", r.url)
+Final URL: http://scanme.nmap.org/
+>>> print("Server header:", r.headers.get("Server"))
+Server header: Apache/2.4.7 (Ubuntu)
+>>> print("Content-Type:", r.headers.get("Content-Type"))
+Content-Type: text/html
+>>> print("First 200 chars of body:\\n", r.text[:200].replace('\n','\\n'))
+First 200 chars of body:\n <!DOCTYPE html>\n<html lang="en">\n<head>\n<title>Go ahead and ScanMe!</title>\n<meta name="viewport" content="width=device-width,initial-scale=1">\n<meta name="theme-color" content="#2A0D45">\n<link rel="p
+
+
+Step 4
+
+HTTP/2 503 
+server: awselb/2.0
+date: Mon, 03 Nov 2025 16:25:12 GMT
+content-type: text/html
+content-length: 162
+
+<html>
+<head><title>503 Service Temporarily Unavailable</title></head>
+<body>
+<center><h1>503 Service Temporarily Unavailable</h1></center>
+</body>
+</html>
+
+HTTP/2 503 
+server: awselb/2.0
+date: Mon, 03 Nov 2025 16:25:12 GMT
+content-type: text/html
+content-length: 162
+
+<html>
+<head><title>503 Service Temporarily Unavailable</title></head>
+<body>
+<center><h1>503 Service Temporarily Unavailable</h1></center>
+</body>
+</html>

@@ -8,19 +8,19 @@ Server: Apache/2.4.7 (Ubuntu)
 
 Step 2
 
-Inspect the saved file and copy the first 10 non-empty lines into your phase1_page_head.txt.
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Go ahead and ScanMe!</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#2A0D45">
-<link rel="preload" as="image" href="/images/sitelogo.png" imagesizes="168px" imagesrcset="/images/sitelogo.png, /images/sitelogo-2x.png 2x">
-<link rel="preload" as="image" href="/shared/images/nst-icons.svg">
-<link rel="stylesheet" href="/shared/css/nst.css?v=2">
-<script async src="/shared/js/nst.js?v=2"></script>
-
 1. What is the <title> of the page (if present)?
 <title>Go ahead and ScanMe!</title>
 2. Do you see any <form> elements? What are their action attributes (copy them)?
 <form class="nst-search" id="nst-head-search" action="/search/">
+
+Step 3
+
+1. Did requests and curl report the same status and server header?
+Yes, they did.
+2. If different, what header or other factor might explain it (redirects, default headers, user agent)?
+
+Step 4
+
+1. Did the response change (status, server header, content-length) when the User-Agent was MyTestAgent/1.0?
+No
+2. If it had changed, what could that mean about the server’s defenses?
