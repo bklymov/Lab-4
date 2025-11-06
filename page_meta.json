@@ -1,0 +1,12 @@
+{
+  "url": "http://httpbin.org",
+  "title": "httpbin.org",
+  "meta_description": null,
+  "forms": [],
+  "keyword_counts": {
+    "admin": 0,
+    "login": 0,
+    "debug": 0,
+    "error": 0
+  }
+}

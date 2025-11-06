@@ -31,6 +31,11 @@ def parse_page(url, out_file=None):
         "forms": forms
     }
 
+    keywords = ["admin", "login", "debug", "error"]
+    text = soup.get_text(separator=" ").lower()
+    kw_counts = {k: text.count(k) for k in keywords}
+    result["keyword_counts"] = kw_counts
+
     if out_file:
         with open(out_file, "w") as fh:
             json.dump(result, fh, indent=2)

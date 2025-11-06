@@ -30,6 +30,6 @@ firewalls or server rules
 Step 5
 
 1. What three pieces of information from the steps above would be most useful in a reconnaissance report, and why?
-Status code, Server header, URL
+HTTP Status code, Server header, Forms and input fields
 2. One quick defensive suggestion an admin could use to reduce information leakage from headers.
 Do not include the version of a server.
