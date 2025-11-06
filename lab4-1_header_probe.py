@@ -10,7 +10,7 @@ USER_AGENTS = [
     "python-requests/2.x"
 ]
 
-headers = {
+HEADERS = {
     "X-Forwarded-For": "1.2.3.4",
     "Referer": "http://evil.example/",
     "Accept-Language": "fr-FR"
