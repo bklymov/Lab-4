@@ -10,13 +10,6 @@ USER_AGENTS = [
     "python-requests/2.x"
 ]
 
-HEADERS = {
-    "X-Forwarded-For": "1.2.3.4",
-    "Referer": "http://evil.example/",
-    "Accept-Language": "fr-FR"
-}
-
-
 def probe(url, out_csv=None):
     rows = []
     for ua in USER_AGENTS:

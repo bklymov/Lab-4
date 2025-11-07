@@ -17,28 +17,35 @@ First 200 chars of body:\n <!DOCTYPE html>\n<html lang="en">\n<head>\n<title>Go 
 
 Step 4
 
-HTTP/2 503 
-server: awselb/2.0
-date: Mon, 03 Nov 2025 16:25:12 GMT
-content-type: text/html
-content-length: 162
+HTTP/2 200 
+date: Fri, 07 Nov 2025 09:44:08 GMT
+content-type: application/json
+content-length: 177
+server: gunicorn/19.9.0
+access-control-allow-origin: *
+access-control-allow-credentials: true
 
-<html>
-<head><title>503 Service Temporarily Unavailable</title></head>
-<body>
-<center><h1>503 Service Temporarily Unavailable</h1></center>
-</body>
-</html>
+{
+  "headers": {
+    "Accept": "*/*", 
+    "Host": "httpbin.org", 
+    "User-Agent": "MyTestAgent/1.0", 
+    "X-Amzn-Trace-Id": "Root=1-690dbf66-3029cbef325b519d534c897d"
+  }
+}
+HTTP/2 200 
+date: Fri, 07 Nov 2025 09:44:08 GMT
+content-type: application/json
+content-length: 172
+server: gunicorn/19.9.0
+access-control-allow-origin: *
+access-control-allow-credentials: true
 
-HTTP/2 503 
-server: awselb/2.0
-date: Mon, 03 Nov 2025 16:25:12 GMT
-content-type: text/html
-content-length: 162
-
-<html>
-<head><title>503 Service Temporarily Unavailable</title></head>
-<body>
-<center><h1>503 Service Temporarily Unavailable</h1></center>
-</body>
-</html>
+{
+  "headers": {
+    "Accept": "*/*", 
+    "Host": "httpbin.org", 
+    "User-Agent": "curl/8.5.0", 
+    "X-Amzn-Trace-Id": "Root=1-690dbf68-1477c49b04ac47c061a1f215"
+  }
+}

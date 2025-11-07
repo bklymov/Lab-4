@@ -22,7 +22,7 @@ Yes, they did.
 Step 4
 
 1. Did the response change (status, server header, content-length) when the User-Agent was MyTestAgent/1.0?
-No
+Yes
 2. If it had changed, what could that mean about the server’s defenses?
 Some server's may block, redirect, or return different content depending on their 
 firewalls or server rules
