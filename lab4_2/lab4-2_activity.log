@@ -1,0 +1,40 @@
+Task 2.1
+@bklymov ➜ /workspaces/Lab-4/lab4_2 (main) $ python3 lab4-2_probe.py scaneme.nmap.org 22
+scaneme.nmap.org:22 is OPEN
+@bklymov ➜ /workspaces/Lab-4/lab4_2 (main) $ python3 lab4-2_probe.py scaneme.nmap.org 9999
+scaneme.nmap.org:9999 is CLOSED (timeout)
+@bklymov ➜ /workspaces/Lab-4/lab4_2 (main) $ python3 lab4-2_probe.py scaneme.nmap.org 23
+scaneme.nmap.org:23 is CLOSED (timeout)
+@bklymov ➜ /workspaces/Lab-4/lab4_2 (main) $ python3 lab4-2_probe.py scaneme.nmap.org 53
+scaneme.nmap.org:53 is CLOSED (timeout)
+@bklymov ➜ /workspaces/Lab-4/lab4_2 (main) $ python3 lab4-2_probe.py scaneme.nmap.org 7
+scaneme.nmap.org:7 is CLOSED (timeout)
+@bklymov ➜ /workspaces/Lab-4/lab4_2 (main) $ python3 lab4-2_probe.py scaneme.nmap.org 19
+scaneme.nmap.org:19 is CLOSED (timeout)
+@bklymov ➜ /workspaces/Lab-4/lab4_2 (main) $ python3 lab4-2_probe.py scaneme.nmap.org 20
+scaneme.nmap.org:20 is CLOSED (timeout)
+@bklymov ➜ /workspaces/Lab-4/lab4_2 (main) $ python3 lab4-2_probe.py scaneme.nmap.org 21
+scaneme.nmap.org:21 is CLOSED (timeout)
+@bklymov ➜ /workspaces/Lab-4/lab4_2 (main) $ python3 lab4-2_probe.py scaneme.nmap.org 22
+scaneme.nmap.org:22 is OPEN
+@bklymov ➜ /workspaces/Lab-4/lab4_2 (main) $ python3 lab4-2_probe.py scaneme.nmap.org 25
+scaneme.nmap.org:25 is OPEN
+@bklymov ➜ /workspaces/Lab-4/lab4_2 (main) $ python3 lab4-2_probe.py scaneme.nmap.org 49
+scaneme.nmap.org:49 is CLOSED (timeout)
+
+Task 3.1
+@bklymov ➜ /workspaces/Lab-4/lab4_2 (main) $ python3 lab4-2_scan.py --host scanme.nmap.org --ports 20-1024 --workers 30 --timeout 1.0
+Scan complete in 4.78s — 2 open ports found
+Wrote results to scan_results.json
+    {
+      "port": 22,
+      "open": true,
+      "reason": null
+    },
+    {
+      "port": 80,
+      "open": true,
+      "reason": null
+    },
+@bklymov ➜ /workspaces/Lab-4/lab4_2 (main) $ python3 lab4-2_scan.py --host scanme.nmap.org --ports 20-1024 --workers 1000 --timeout 1.0
+Scan complete in 0.46s — 2 open ports found
